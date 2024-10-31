@@ -1,0 +1,12 @@
+_dev-only
+
+tsconfig.tsbuildinfo
+*.js.map
+*.ts
+!*.d.ts
+*.json
+.env
+.prettierrc
+.eslintrc.js
+*eslintrc*
+.txt
