@@ -5,7 +5,8 @@ import { CheckPasswordDTO } from './dto/check-password.dto';
 export class AuthController {
   @Post('password')
   private checkPassword(@Body() { password }: CheckPasswordDTO) {
-    console.log(process.env.ADMIN_PASSWORD);
-    return password === process.env.ADMIN_PASSWORD;
+    return {
+      isAdmin: password === process.env.ADMIN_PASSWORD,
+    };
   }
 }
