@@ -43,10 +43,10 @@ ${\textsf{\color{orange}POST}}$ &nbsp; &nbsp; &nbsp; &nbsp;`https://{host}/quiz/
 Install the package to the main NestJS application and add it to the main module imports:
 
 ```
-import { QuestionsModule } from '@fellendorf/api-quiz-questions-module';
+import { AuthModule } from '@fellendorf/api-quiz-auth-module';
 
 @Module({
-  imports: [QuestionsModule],
+  imports: [AuthModule],
   controllers: [],
   providers: [],
 })
